@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+
+<html lang="" id="page1">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+        <title>Abel's Impossibility Theorem - Interactive Screen</title>
+
+      <!-- polynomial source -->
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+        <script src="../Polynomial.js-master/polynomial.js"></script>
+        <script src="../Polynomial.js-master/polynomial.min.js"></script>
+
+        <!-- p5 source -->
+        <script src="../p5.min.js"></script>
+        <script src="../addons/p5.dom.min.js"></script>
+        <script src="../addons/p5.sound.min.js"></script>
+        <script src="./point.js"></script>
+        <script src="./path.js"></script>
+        <script src="./motion.js"></script>
+        <script src="./complexFunctions.js"></script>
+        <script src="./sketch.js"></script>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/cover.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+
+  <body style="display:-ms-inline-grid; text-align: center; position: relative" class="center">
+      <body>
+
+          <div id="titleDiv" style="text-align: center">
+      
+            <br>
+            <h1 id="titleText">Abel's Impossibility Theorem</h1> 
+            <p style="color: black">Spring 2019 - University of Illinois at Chicago</p>
+            <img src="./css/mclLogo.png" id="mclLogo">
+            <br><br>
+            <div id="navContainer">
+            <ul>
+              <li><a href="../index.html"> History |</a></li>
+              <li><a href="./quadratic.html"> Quadratic |</a></li>
+              <li><a href="../cubicScreen/cubic.html"> Cubic |</a></li>
+              <li><a href="../quinticScreen/quintic.html"> Quintic |</a></li>
+              <li><a href="../abel.html"> Interactive</a></li>
+            </ul>
+            </div>
+            <br>
+      
+          </div>
+      
+          <br>
+
+          <div id = "centerScreen">
+            <br>
+            <h2>Necessity of Radicals for Solving Quadratic Equations</h2>    
+            <br>
+            <div id="sketch-holder"></div> 
+            <br>
+            <div id="textWrapper">
+              <p style="font-size: 18px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                We now show that there is no formula for the roots z1,z2 of a general Monic polynomial p ∈ Poly2
+                (C) in terms of analytic (single valued) functions f ,g : {a0,a1} → C such that f(a0,a1) = z1 and
+                g(a0,a1) = z2 for a general quadratic equation.
+                </p>
+                <p style="font-size: 18px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" >
+                    Suppose otherwise. Then, using Vieta’s formula we find that the coefficients a0,a1 given by a0 = z1z2 and a1 = −(z1+z2), which are
+                    symmetric expressions in z1,z2. Starting from distinct points z1,z2 we can continuously move them until they change places 
+                    z1 → z2, z2 → z1. Under this motion: I Each of the coefficients a0,a1 follows a closed path,
+                    I The functions f(a0,a1) and g(a0,a1) follow closed paths. Contradicting the assumption that 
+                    f and g follow the roots z1,z2, that interchanged places.
+                      
+                </p>
+                <p style="font-size: 20px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                    Conclusion: Any formula would require use of multi-valued function (Quadratic Formula).
+                </p>
+            </div>
+          </div>   
+
+        </body>
+
+        <br>
+        <br>
+</html>

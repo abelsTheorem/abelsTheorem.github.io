@@ -1,0 +1,82 @@
+.sketch-holder{
+    position: relative;
+    top: 300px;
+}
+
+#titleDiv{
+    position: relative;
+    height: 230px;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .25);
+    background-image: url("./curly-gray.png");
+    border-bottom-color: rgb(148, 148, 148);
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+#wrapper {
+    position: relative;
+    align-content: center;
+    width: 600px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .25);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .25);
+    border:1px solid rgb(148, 148, 148);
+    color: black;
+    font-size: 18px;
+    background-image: url("./curly-gray.png");
+}
+
+#mclLogo {
+	max-width: 12%;
+    height:auto;
+    position: relative;
+}
+
+#titleText{
+    font-size: 38px; 
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#centerScreen{
+    height: 1200px;
+    width: 80%;
+    color: black;
+
+    background:     
+        linear-gradient(
+            rgba(105, 102, 102, 0.3), 
+            rgba(105, 102, 102, 0.3)
+        ),
+
+        url("./curly-gray.png");
+    
+    text-align: center;
+    margin: 0 auto;
+}
+
+#navContainer ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navContainer ul li{
+    color: black;
+    display: inline;
+}
+
+#textWrapper{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    background-color:  rgba(162, 143, 143, 0.2);
+}
+
+a{
+    color: black;
+}

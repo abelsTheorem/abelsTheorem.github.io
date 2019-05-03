@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+
+<html lang="" id="page1">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+        <title>Abel's Impossibility Theorem - Interactive Screen</title>
+
+      <!-- polynomial source -->
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+        <script src="../Polynomial.js-master/polynomial.js"></script>
+        <script src="../Polynomial.js-master/polynomial.min.js"></script>
+
+        <!-- p5 source -->
+        <script src="../p5.min.js"></script>
+        <script src="../addons/p5.dom.min.js"></script>
+        <script src="../addons/p5.sound.min.js"></script>
+        <script src="./point.js"></script>
+        <script src="./path.js"></script>
+        <script src="./motion.js"></script>
+        <script src="./complexFunctions.js"></script>
+        <script src="./sketch.js"></script>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/cover.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+
+  <body style="display:-ms-inline-grid; text-align: center; position: relative" class="center">
+      <body>
+
+          <div id="titleDiv" style="text-align: center">
+      
+            <br>
+            <h1 id="titleText">Abel's Impossibility Theorem</h1> 
+            <p style="color: black">Spring 2019 - University of Illinois at Chicago</p>
+            <img src="./css/mclLogo.png" id="mclLogo">
+            <br><br>
+            <div id="navContainer">
+            <ul>
+              <li><a href="../index.html"> History |</a></li>
+              <li><a href="../quadraticScreen/quadratic.html"> Quadratic |</a></li>
+              <li><a href="../cubicScreen/cubic.html"> Cubic |</a></li>
+              <li><a href="./quintic.html"> Quintic |</a></li>
+              <li><a href="../abel.html"> Interactive</a></li>
+            </ul>
+            </div>
+            <br>
+      
+          </div>
+      
+          <br>
+
+          <div id = "centerScreen">
+            <br>
+            <h2>Impossibility of Solving the Quintic in Radicals</h2>    
+            <br>
+            <div id="sketch-holder"></div> 
+            <br>
+            <div id="textWrapper">
+                <p style="font-size: 18px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                    Suppose otherwise, and let A = {a1,... a4}. Then, there exist functions f1,...,fk : A → C5
+                    that expresses the roots of a general Monic polynomial p ∈ Poly5 (C). By previous case there must be at least N ≥ 3 levels of nested radicals.
+                  </p>
+                  <p style="font-size: 18px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" >
+                      Thus, suppose we have an expression of N ∈ N levels of nested roots. Since S5 is not soluble, then
+                      we know that there exists continuous paths such that their commutator induce a non-trivial permutation of the roots, while both the
+                      coefficients of p and fi, for 1 ≤ i ≤ k, follow a closed loop, contradiction.
+                        
+                  </p>
+                  <p style="font-size: 20px; padding: 10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                      Conclusion: One cannot construct an expression for the roots of a general p ∈ Poly5 (C) in terms of it’s coefficients, analytic functions, and radicals.
+                  </p>
+              </div>
+          </div>   
+
+        </body>
+
+        <br>
+        <br>
+</html>
